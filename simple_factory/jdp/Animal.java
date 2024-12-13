@@ -1,0 +1,26 @@
+////////////////////////////////////////////////////////////////
+package simple_factory.jdp;
+////////////////////////////////////////////////////////////////
+interface Animal {
+    void speak();
+    void action();
+}
+////////////////////////////////////////////////////////////////
+class Dog implements Animal {
+    public void speak() {
+        System.out.println( "bau bau" );
+    }
+    public void action() {
+        System.out.println( "barking" );
+    }
+}
+////////////////////////////////////////////////////////////////
+class Cat implements Animal {
+    public void speak() {
+        System.out.println( "meou" );
+    }
+    public void action() {
+        System.out.println( "sleeping" );
+    }
+}
+////////////////////////////////////////////////////////////////
