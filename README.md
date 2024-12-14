@@ -1,3 +1,5 @@
-Design Patterns from various books( only one for now :)
+Design Patterns from various books:
 
-- Vaskaran Sarcar, Java Design Patterns
+- jdp, Java Design Patterns
+- didp, Dive Into Design Patterns
+- gpp, Game Programming Patterns
