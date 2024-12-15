@@ -1,0 +1,30 @@
+////////////////////////////////////////////////////////////////
+package abstract_factory;
+////////////////////////////////////////////////////////////////
+class Computer {
+    CPU cpu;
+    Memory memory;
+    Computer( ComputerFactory computerFactory ){
+        cpu = computerFactory.createCPU();
+        memory = computerFactory.createMemory();
+    }
+    void info() {
+        System.out.println( cpu.clock());
+        System.out.println( memory.capacity());
+    }
+    public static void main( String args[] ){
+        Computer acer = new Computer( new Acer());
+        acer.info();
+        // Intel, 3.70 GHz
+        // CORSAIR DDR4, 8GB
+        Computer lenovo = new Computer( new Lenovo());
+        lenovo.info();
+        // AMD, 3.5 GHz
+        // Crucial DDR4, 16BG
+    }
+}
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
