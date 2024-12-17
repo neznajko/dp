@@ -135,7 +135,7 @@ class MCFirefox extends Firefox {
     @Override
     public void request( String method, String body ){
         if( method == "get" ){
-            mcadapta.makeRequest( "<mbody>"+body+"</mbody>" );
+            mcadapta.makeRequest( "<mbody>" + body + "</mbody>" );
         } else
         if( method == "put" ){
             mcadapta.makeRequest( "<wow>THUS US!</wow>" );
