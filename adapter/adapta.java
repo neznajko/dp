@@ -3,9 +3,6 @@ package adapter;
 ////////////////////////////////////////////////////////////////
 import static java.lang.System.out;
 ////////////////////////////////////////////////////////////////
-import java.util.Map;
-import java.util.HashMap;
-////////////////////////////////////////////////////////////////
 // So the idea of this pattern is to make a comunication between
 // interfaces that don't know anything about each other, so lets
 // try to build separately REST and SOAP applications
