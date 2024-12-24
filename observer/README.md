@@ -3,7 +3,7 @@ Leaves float in the breeze,
 The autumn song notifies,  
 Nature's soft retreat.  
 #
-```java
+```c#
     interface Observer {
         void update( Event event );
     }
