@@ -28,7 +28,7 @@ observer to subscribe to a subject and the subject to update the
 state of the observers. The concrete implementation of Subject
 will have an internal list of subscribers, pushing and popping
 them in the *subscribe/unsubscribe* methods, while *notify*
-will call the *update* method of all subscribers
+will call the *update* method on all subscribers
 
 Let's as an example look at the game of Chess, we can think of board
 squares as subjects and at chess pieces as observers. If we have a
