@@ -25,10 +25,10 @@ post some sexy picture your feed has been updated
 
 *Subject* and *Observer* are usually interfaces that allow an
 observer to subscribe to a subject and the subject to update the
-state of the observers. The concrete implementation of a Subject
-will hold an internal list of its observers, pushing and popping
-them in the *subscribe/unsubscribe* methods, while the *notify*
-method will call *update* on all subscribers
+state of the observers. The concrete implementation of Subject
+will have an internal list of subscribers, pushing and popping
+them in the *subscribe/unsubscribe* methods, while *notify*
+will call the *update* method of all subscribers
 
 Let's as an example look at the game of Chess, we can think of board
 squares as subjects and at chess pieces as observers. If we have a
@@ -78,7 +78,7 @@ on c4,
    a   b   c   d   e   f   g   h
  ```
 
-... it will loose control over a4 and b4 squares, so pieces can
+the rook will loose control over a4 and b4 squares, so pieces can
 subscribe to all squares they control, and whenever something lands
 on them, the corresponding square will notify all subscribed pieces
 to update their states
