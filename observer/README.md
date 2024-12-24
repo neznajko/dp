@@ -26,9 +26,9 @@ post some sexy picture your feed has been updated
 *Subject* and *Observer* are usually interfaces that allow an
 observer to subscribe to a subject and the subject to update the
 state of the observers. The concrete implementation of a Subject
-will hold an internal list of its observers, and pushing and popping
+will hold an internal list of its observers, pushing and popping
 them in the *subscribe/unsubscribe* methods, while the *notify*
-method will loop over all subscribers and call *update* on them
+method will call *update* on all subscribers
 
 Let's as an example look at the game of Chess, we can think of board
 squares as subjects and at chess pieces as observers. If we have a
