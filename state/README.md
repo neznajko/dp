@@ -4,7 +4,7 @@ when its internal state changes.
 The object will appear to change its class.
 
 This is kind of an important pattern, and I'm pretty sure that
-every programmer if never had heart about it, has discovered it
+every programmer if never had heard about it, has discovered it
 the hard way. We basically have a system with finite states,
 and have to take decisions depending on the state we currently
 are and the context.
