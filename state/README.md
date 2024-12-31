@@ -58,7 +58,7 @@ A sample regroup function will look like thus:
 ```
 This can start looking pretty ugly, with the *State Pattern*
 we define a State object for each if clause that is
-State_A, State_B etc. whit its own logic of the regroup method.
+State_A, State_B etc. with its own logic of the regroup method.
 This will decouples the code and allow more easily to add new states,
 now the above code will look something like this:
 ```java
