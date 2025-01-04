@@ -61,7 +61,7 @@ The *Mediator* interface will look something like this:
         void notify( Event e );
     }
 ```
-And it looks much like the *Observer Patter*. The one difference
+And it looks much like the *Observer Pattern*. The one difference
 I can think of is that in a system without *Mediator Pattern* the
 elements have many-to-many relations, and the mediator establishes
 one-to-many relations, which is the *Observer Pattern*, but in the
